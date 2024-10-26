@@ -289,259 +289,276 @@
                               
                                 
                                 <div class="">
-                                    
                                     <div class="text">
-                                        <h1>Building Interactive UIs with HTML5 and CSS3 </h1>
-                                        <img class="popup_image" width="100%" src="img/news/html.jpg" alt />
+                                        <h1>Mastering node.js for Scalable Web Applications. </h1>
+                                        <img class="popup_image" width="100%" src="img/news/node.jpg" alt />
+                                       
+                                        <p>-A deep dive into building high-performance, scalable web applications using
+                                            modern JavaScript best practices. </p>
+                                            <h4>Introduction</h4>
+                                            <p>In the modern web, real-time applications have become critical for delivering dynamic user experiences. From live chats to real-time analytics dashboards, Node.js offers a powerful event-driven architecture that allows developers to build highly responsive, scalable real-time applications. This guide will walk you through leveraging Node.js for real-time data processing and event-driven architectures, using technologies such as WebSockets and Node.js streams.</p>
+                                            
+                                            <!-- Image Suggestion: Diagram showing the Node.js event loop handling multiple real-time connections. -->
+                                            <img class="popup_image" width="100%" src="img/news/nod.jpg" alt />
+                                            
+                                            <h4>1. Why Use Node.js for Real-Time Applications?</h4>
+                                            <p>Node.js is ideal for real-time applications because it is **non-blocking** and **event-driven**, meaning it can handle numerous concurrent connections efficiently. Whether you are building chat apps, collaboration tools, or live data dashboards, Node.js enables fast, real-time communication between the client and server.</p>
+                                            <p><strong>Key Advantages of Node.js for Real-Time Applications:</strong></p>
+                                            <ul>
+                                              <li>**Non-blocking I/O**: Handles multiple requests simultaneously without waiting for one to finish before starting another.</li>
+                                              <li>**Event-driven**: Ideal for applications that need to respond to user actions or data changes in real-time.</li>
+                                              <li>**Single-threaded**: Uses an event loop to handle thousands of concurrent connections with low overhead.</li>
+                                            </ul>
 
-
-                                        <p>Best practices for creating dynamic and responsive user interfaces using
-                                            HTML5 and CSS3 for modern web applications. </p>
-                                        <h4>Introduction</h4>
-                                        <p>In today’s web, building engaging and responsive user interfaces is critical
-                                            to providing users with a seamless experience. HTML5 and CSS3 form the
-                                            backbone of modern web development, offering powerful tools to create
-                                            dynamic, interactive, and responsive UIs. This guide covers best practices
-                                            for leveraging HTML5’s structural elements and CSS3’s styling and animation
-                                            capabilities to build effective UIs for modern web applications.</p>
-                                            <img class="popup_image" width="100%" src="img/news/ht.jpg" alt />
-                                        <!-- Image Suggestion: A flow diagram showing how HTML5 and CSS3 work together in the browser to create interactive UIs. -->
-
-                                        <h4>1. Semantic HTML for Better Structure</h4>
-                                        <p>Using semantic HTML elements is crucial for creating well-structured,
-                                            accessible, and SEO-friendly web applications. HTML5 introduces a variety of
-                                            semantic tags, such as <code>&lt;article&gt;</code>,
-                                            <code>&lt;section&gt;</code>, and <code>&lt;header&gt;</code>, that provide
-                                            meaning to the page's content, making it easier for search engines and
-                                            assistive technologies to interpret.</p>
-                                        <p><strong>Best Practices for Semantic HTML:</strong></p>
-                                        <ul>
-                                            <li>Use <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and
-                                                <code>&lt;nav&gt;</code> for defining the structure of your application.
-                                            </li>
-                                            <li>Use <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> to
-                                                break down content logically.</li>
-                                        </ul>
-
-                                        <pre><code class="language-html">
-                                            <!-- <img class="popup_image" width="100%" src="img/news/exa.png" alt /> -->
-                                        <!-- Example of semantic HTML structure -->
-                                        <header>
-                                            <h1>Website Title</h1>
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="/">Home</a></li>
-                                                    <li><a href="/about">About</a></li>
-                                                </ul>
-                                            </nav>
-                                        </header>
-                                        <article>
-                                            <section>
-                                                <h2>Main Content</h2>
-                                                <p>This is the main content of the page.</p>
-                                            </section>
-                                        </article>
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/exa.png" alt />
-                                        <!-- Image Suggestion: Diagram showing how semantic HTML elements provide structure to a webpage. -->
-
-                                        <h4>2. Responsive Layouts with Flexbox and Grid</h4>
-                                        <p>Creating responsive layouts is essential to ensure that your web application
-                                            works across different screen sizes and devices. CSS3 offers two powerful
-                                            layout modules: **Flexbox** and **CSS Grid**. These tools allow you to build
-                                            flexible and responsive designs with minimal effort.</p>
-                                        <p><strong>Flexbox:</strong> Great for creating one-dimensional layouts, like
-                                            rows and columns.</p>
-                                        <p><strong>CSS Grid:</strong> Ideal for building two-dimensional layouts, where
-                                            both rows and columns need to be defined.</p>
-
-                                        <pre><code class="language-css">
-                                        /* Flexbox example for a row layout */
-                                        .container {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                        }
-                                        
-                                        /* CSS Grid example for a responsive layout */
-                                        .grid-container {
-                                            display: grid;
-                                            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                                            gap: 20px;
-                                        }
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/cs.webp" alt />
-                                        <!-- Image Suggestion: Visual comparison between Flexbox and CSS Grid layouts. -->
-
-                                        <h4>3. Media Queries for Responsive Design</h4>
-                                        <p>Responsive design ensures that your application looks great on all devices,
-                                            from desktops to mobile phones. **Media queries** allow you to apply
-                                            different CSS styles based on the device’s screen size, orientation, or
-                                            resolution.</p>
-                                        <p><strong>Best Practices for Media Queries:</strong></p>
-                                        <ul>
-                                            <li>Start with a **mobile-first approach** by writing base styles for
-                                                smaller devices, then use media queries for larger screens.</li>
-                                            <li>Target specific breakpoints based on your design needs (e.g., 768px for
-                                                tablets, 1024px for desktops).</li>
-                                        </ul>
-
-                                        <pre><code class="language-css">
-                                        /* Mobile-first styles */
-                                        body {
-                                            font-size: 16px;
-                                        }
-                                        
-                                        /* Tablet and larger screens */
-                                        @media (min-width: 768px) {
-                                            body {
-                                                font-size: 18px;
+                                            <img class="popup_image" width="100%" src="img/news/nood.png" alt />
+                                            
+                                            <!-- Image Suggestion: A comparison between traditional request-response architecture and event-driven architecture. -->
+                                            
+                                            <h4>2. Real-Time Communication with WebSockets</h4>
+                                            <p>Unlike HTTP, which follows a request-response model, **WebSockets** allow for bi-directional communication between the client and the server, making it perfect for real-time applications. With WebSockets, once a connection is established, the server can push updates to the client without waiting for the client to make another request.</p>
+                                            <p><strong>Setting Up WebSockets with Node.js:</strong></p>
+                                            
+                                            <pre><code class="language-javascript">
+                                            // WebSocket server using Socket.io
+                                            const io = require('socket.io')(3000);
+                                            
+                                            io.on('connection', socket => {
+                                                console.log('New user connected');
+                                                socket.on('message', message => {
+                                                    io.emit('message', message); // Broadcasts the message to all connected clients
+                                                });
+                                            });
+                                            </code></pre>
+                                            
+                                            <p>This simple setup allows you to build real-time chat applications where messages are broadcast to all connected users instantly.</p>
+                                            <img class="popup_image" width="100%" src="img/news/clie.png" alt />
+                                            <!-- Image Suggestion: Flowchart showing the real-time communication process between client and server using WebSockets. -->
+                                            
+                                            <h4>3. Using Node.js Streams for Real-Time Data Processing</h4>
+                                            <p>**Node.js streams** allow you to process data piece by piece as it becomes available, which is ideal for handling large amounts of real-time data such as video streams, logs, or file uploads. Instead of loading the entire data set into memory, streams enable you to process data in chunks, improving performance and scalability.</p>
+                                            
+                                            <pre><code class="language-javascript">
+                                            // Example of a readable stream in Node.js
+                                            const fs = require('fs');
+                                            const stream = fs.createReadStream('largeFile.txt');
+                                            
+                                            stream.on('data', chunk => {
+                                                console.log('Processing chunk:', chunk);
+                                            });
+                                            
+                                            stream.on('end', () => {
+                                                console.log('Finished processing the file');
+                                            });
+                                            </code></pre>
+                                            
+                                            <p>Streams are commonly used in real-time applications to process live data efficiently, without overloading system resources.</p>
+                                            <img class="popup_image" width="100%" src="img/news/enter.jpg" alt />
+                                            <!-- Image Suggestion: Diagram showing how Node.js streams process data in chunks rather than all at once. -->
+                                            
+                                            <h4>4. Scaling Real-Time Applications with Clustering</h4>
+                                            <p>As your real-time application grows, you may need to scale it to handle thousands or even millions of connections. Node.js can be scaled using **clustering**, where multiple instances of the Node.js application run on different CPU cores, allowing you to handle more requests simultaneously.</p>
+                                            <p><strong>Setting Up Clustering in Node.js:</strong></p>
+                                            
+                                            <pre><code class="language-javascript">
+                                            // Node.js clustering example
+                                            const cluster = require('cluster');
+                                            const http = require('http');
+                                            const numCPUs = require('os').cpus().length;
+                                            
+                                            if (cluster.isMaster) {
+                                                // Fork workers
+                                                for (let i = 0; i < numCPUs; i++) {
+                                                    cluster.fork();
+                                                }
+                                            
+                                                cluster.on('exit', (worker) => {
+                                                    console.log(`Worker ${worker.process.pid} died, starting a new worker`);
+                                                    cluster.fork();
+                                                });
+                                            } else {
+                                                // Workers can share the same TCP connection
+                                                http.createServer((req, res) => {
+                                                    res.writeHead(200);
+                                                    res.end('Hello World\n');
+                                                }).listen(8000);
                                             }
-                                        }
-                                        
-                                        /* Desktop screens */
-                                        @media (min-width: 1024px) {
-                                            body {
-                                                font-size: 20px;
-                                            }
-                                        }
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/samm.webp" alt />
-
-                                        <!-- Image Suggestion: Responsive layout showcasing how the same webpage adjusts across different device sizes (e.g., mobile, tablet, desktop). -->
-
-                                        <h4>4. Interactive UI Elements with CSS3 Transitions and Animations</h4>
-                                        <p>CSS3 introduces powerful tools for creating interactive and engaging user
-                                            experiences, such as **transitions** and **animations**. Transitions allow
-                                            you to smoothly change property values (e.g., color or size) when triggered
-                                            by events like hover, while animations allow for more complex movements and
-                                            effects over time.</p>
-                                        <p><strong>Best Practices for CSS3 Transitions and Animations:</strong></p>
-                                        <ul>
-                                            <li>Use transitions for simple hover effects like buttons or image scaling.
-                                            </li>
-                                            <li>Use keyframe animations to create more complex effects, like moving
-                                                elements or fading in/out content.</li>
-                                        </ul>
-
-                                        <pre><code class="language-css">
-                                        /* Example of CSS transition for a hover effect */
-                                        button {
-                                            background-color: blue;
-                                            transition: background-color 0.3s ease;
-                                        }
-                                        
-                                        button:hover {
-                                            background-color: red;
-                                        }
-                                        
-                                        /* Example of keyframe animation for a sliding effect */
-                                        @keyframes slideIn {
-                                            from {
-                                                transform: translateX(-100%);
-                                            }
-                                            to {
-                                                transform: translateX(0);
-                                            }
-                                        }
-                                        
-                                        .element {
-                                            animation: slideIn 1s ease-in-out;
-                                        }
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/hov.gif" alt />
-                                        <!-- Image Suggestion: An illustration showing a button transitioning from one color to another on hover, and an element sliding into view. -->
-
-                                        <h4>5. Accessibility and ARIA Attributes</h4>
-                                        <p>Building interactive UIs isn't just about visuals and functionality—it’s also
-                                            about accessibility. **ARIA (Accessible Rich Internet Applications)**
-                                            attributes provide additional information to screen readers, ensuring that
-                                            users with disabilities can navigate and interact with your application
-                                            effectively.</p>
-                                        <p><strong>Best Practices for Accessibility:</strong></p>
-                                        <ul>
-                                            <li>Use ARIA attributes to enhance the accessibility of interactive
-                                                elements, such as buttons, sliders, or modals.</li>
-                                            <li>Ensure all interactive elements are keyboard-navigable and provide focus
-                                                styles for better visibility.</li>
-                                        </ul>
-
-                                        <pre><code class="language-html">
-                                        <!-- Example of adding ARIA attributes for a button -->
-                                        <button aria-label="Submit Form">Submit</button>
-                                        
-                                        <!-- Example of focus styles for accessibility -->
-                                        button:focus {
-                                            outline: 2px solid blue;
-                                        }
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/fo.webp" alt />
-                                        <!-- Image Suggestion: A demonstration of how ARIA attributes make elements accessible to screen readers. -->
-
-                                        <h4>6. Advanced Styling with CSS Variables and Custom Properties</h4>
-                                        <p>CSS3 allows you to define **CSS variables** (also called custom properties),
-                                            which make managing styles much easier, especially for large projects.
-                                            Variables let you store values like colors or font sizes in one place and
-                                            reuse them throughout your stylesheet, improving consistency and
-                                            maintainability.</p>
-                                        <p><strong>How to Use CSS Variables:</strong></p>
-                                        <ul>
-                                            <li>Define variables at the root level using <code>:root</code> so they can
-                                                be accessed globally.</li>
-                                            <li>Override variables within specific components to create theme variations
-                                                or dynamic styles.</li>
-                                        </ul>
-
-                                        <pre><code class="language-css">
-                                        /* Defining CSS variables */
-                                        :root {
-                                            --primary-color: #3498db;
-                                            --font-size: 16px;
-                                        }
-                                        
-                                        /* Using variables */
-                                        button {
-                                            background-color: var(--primary-color);
-                                            font-size: var(--font-size);
-                                        }
-                                        </code></pre>
-                                        <img class="popup_image" width="100%" src="img/news/var.png" alt />
-
-                                        <!-- Image Suggestion: A diagram showing how CSS variables are defined globally and reused throughout components. -->
-
-                                        <h4>7. Optimizing Performance with CSS3 and HTML5</h4>
-                                        <p>Performance is a critical aspect of building interactive UIs. CSS3 and HTML5
-                                            provide various techniques for improving the speed and efficiency of your
-                                            application. Consider using **CSS3 animations** over JavaScript for smoother
-                                            performance and **lazy loading** for media to reduce initial load times.</p>
-                                        <p><strong>Best Practices for Performance Optimization:</strong></p>
-                                        <ul>
-                                            <li>Use CSS3 animations where possible to reduce reliance on JavaScript.
-                                            </li>
-                                            <li>Implement lazy loading for images and videos using the
-                                                <code>loading="lazy"</code> attribute in HTML5.</li>
-                                        </ul>
-
-                                        <pre><code class="language-html">
-                                        <!-- Example of lazy loading an image -->
-                                        <img class="popup_image" width="100%" src="img/news/css.jpeg" alt />
-                                        </code></pre>
-
-                                        <!-- Image Suggestion: Performance comparison showing a website loading without lazy loading vs. with lazy loading. -->
-
-                                        <h4>Conclusion</h4>
-                                        <p>Building interactive and responsive user interfaces with HTML5 and CSS3 is
-                                            more accessible than ever, thanks to new features like Flexbox, Grid, media
-                                            queries, transitions, and animations. By following best practices, including
-                                            semantic HTML, responsive design, and performance optimization, you can
-                                            create modern UIs that are engaging, accessible, and efficient across all
-                                            devices and platforms.</p>
-                                            <img class="popup_image" width="100%" src="img/news/htt.webp" alt />
-                                        <!-- Image Suggestion: A final infographic summarizing the key best practices for building interactive UIs with HTML5 and CSS3. -->
-
+                                            </code></pre>
+                                            
+                                            <p>Clustering helps scale your Node.js application across multiple CPU cores, improving its ability to handle concurrent connections.</p>
+                                            <img class="popup_image" width="100%" src="img/news/dd.png" alt />
+                                            <!-- Image Suggestion: Diagram showing how Node.js clustering works to scale applications across multiple CPU cores. -->
+                                            
+                                            <h4>5. Implementing Real-Time APIs with Socket.IO</h4>
+                                            <p>**Socket.IO** is a popular library that simplifies real-time communication in Node.js. It abstracts away the complexities of WebSockets, enabling developers to build real-time APIs quickly. With Socket.IO, you can create features like real-time notifications, collaboration tools, and live data updates.</p>
+                                            <p><strong>Example of Real-Time Notifications with Socket.IO:</strong></p>
+                                            
+                                            <pre><code class="language-javascript">
+                                            // Real-time notifications with Socket.IO
+                                            const io = require('socket.io')(3000);
+                                            
+                                            io.on('connection', socket => {
+                                                socket.on('send-notification', data => {
+                                                    // Emit the notification to all connected users
+                                                    io.emit('receive-notification', data);
+                                                });
+                                            });
+                                            </code></pre>
+                                            
+                                            <p>This setup can be used to push real-time notifications to all connected users whenever an event occurs in your application.</p>
+                                            <img class="popup_image" width="100%" src="img/news/socket.webp" alt />
+                                            <!-- Image Suggestion: A flow diagram showing the process of sending and receiving real-time notifications using Socket.IO. -->
+                                            
+                                            <h4>6. Securing Real-Time Applications</h4>
+                                            <p>Real-time applications can be vulnerable to attacks such as **man-in-the-middle attacks**, **data injection**, and **cross-site scripting (XSS)**. It’s important to implement security best practices such as using **HTTPS**, **authentication**, and **input validation** to secure your real-time Node.js application.</p>
+                                            <p><strong>Best Practices for Securing Real-Time Applications:</strong></p>
+                                            <ul>
+                                              <li>Always use **HTTPS** to encrypt data in transit.</li>
+                                              <li>Implement **token-based authentication** (e.g., JWT) to verify users before allowing access to the WebSocket connection.</li>
+                                              <li>Use input validation to prevent malicious data from being injected into your real-time system.</li>
+                                            </ul>
+                                            
+                                            <pre><code class="language-javascript">
+                                            // Example of securing a WebSocket connection with JWT authentication
+                                            const jwt = require('jsonwebtoken');
+                                            const io = require('socket.io')(3000);
+                                            
+                                            io.use((socket, next) => {
+                                                const token = socket.handshake.query.token;
+                                                if (jwt.verify(token, 'secretKey')) {
+                                                    return next();
+                                                }
+                                                return next(new Error('Authentication error'));
+                                            });
+                                            
+                                            io.on('connection', socket => {
+                                                console.log('User connected');
+                                            });
+                                            </code></pre>
+                                            <img class="popup_image" width="100%" src="img/news/doo.svg" alt />
+                                            
+                                            <!-- Image Suggestion: A flowchart showing the process of securing a WebSocket connection with token-based authentication. -->
+                                            
+                                            <h4>Conclusion</h4>
+                                            <p>Building real-time applications with Node.js enables developers to create highly interactive and responsive user experiences. By leveraging WebSockets, Node.js streams, and clustering, you can build scalable real-time systems that efficiently handle multiple concurrent connections. Whether you’re building a chat application, real-time dashboard, or collaborative tool, Node.js provides the architecture and tools needed to create robust, secure, and scalable real-time applications.</p>
+                                            <img class="popup_image" width="100%" src="img/news/kk.png" alt />
+                                            <!-- Image Suggestion: Infographic summarizing the key features of real-time applications built with Node.js (WebSockets, streams, clustering, security). -->
+                                            
 
                                     </div>
-
+                                    <div class="info">
+                                       
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="elisc_tm_experience">
+                                <div class="tm_content">
+                                    <div class="elisc_tm_title">
+                                        <span>- Experience</span>
+                                        <h5>My journey with JavaScript began during my early days of web development, where
+                                            I primarily used it to add simple interactivity to static websites. Over the
+                                            years, as JavaScript evolved, so did my proficiency in the language, and it
+                                            quickly became a central part of my toolkit for building scalable and dynamic
+                                            web applications.</h5>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <img class="popup_image" src="img/experience/1.jpg" alt />
+                                                <div class="list_inner">
+                                                    <div class="short">
+                                                        <div class="job">
+                                                            <span class="yellowColor">2018</span>
+                                                            <h3>Starting with Frontend Development</h3>
+                                                        </div>
+                                                        <div class="place">
+                                                            <span>-dynamic quiz app using JavaScript</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>Initially, I focused on using vanilla JavaScript for enhancing
+                                                            user interfaces, creating form validations, and handling user
+                                                            interactions. One of my first significant projects involved
+                                                            building an interactive web form that dynamically validated
+                                                            inputs and responded to user actions without requiring page
+                                                            reloads.</p>
+                                                    </div>
+    
+    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img class="popup_image" src="img/experience/2.jpg" alt />
+                                                <div class="list_inner">
+                                                    <div class="short">
+                                                        <div class="job">
+                                                            <span class="yellowColor">2018</span>
+                                                            <h3>Exploring JavaScript Frameworks</h3>
+                                                        </div>
+                                                        <div class="place">
+                                                            <span> using Vue.js</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>As I progressed, I embraced frontend frameworks like Vue.js and
+                                                            React, which streamlined the development process and enabled me
+                                                            to create more structured, scalable applications. I began
+                                                            leveraging component-based architectures and the Virtual DOM,
+                                                            which dramatically improved the performance of the applications
+                                                            I built.</p>
+                                                    </div>
+    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img class="popup_image" src="img/experience/3.jpg" alt />
+                                                <div class="list_inner">
+                                                    <div class="short">
+                                                        <div class="job">
+                                                            <span class="yellowColor">2022</span>
+                                                            <h3>Diving Into Full Stack Development</h3>
+                                                        </div>
+                                                        <div class="place">
+                                                            <span>WebSockets in a Node.js </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>Expanding my JavaScript skills, I ventured into full-stack
+                                                            development with Node.js. This opened doors to backend
+                                                            development, where I applied JavaScript not just in the browser
+                                                            but also on the server, creating RESTful APIs and working with
+                                                            databases like MongoDB.</p>
+                                                    </div>
+    
+    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img class="popup_image" src="img/experience/4.jpg" alt />
+                                                <div class="list_inner">
+                                                    <div class="short">
+                                                        <div class="job">
+                                                            <span class="yellowColor">2018 - PRESENT</span>
+                                                            <h3>Modern JavaScript (ES6+ and Beyond)</h3>
+                                                        </div>
+                                                        <div class="place">
+                                                            <span>Async/await to simplify the handling of API calls</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>With the release of ES6 (ECMAScript 2015), JavaScript became even
+                                                            more powerful. I quickly adopted the new features like arrow
+                                                            functions, template literals, destructuring, and async/await to
+                                                            improve code readability and performance. These additions
+                                                            significantly reduced the boilerplate code and improved how I
+                                                            approached asynchronous programming.</p>
+                                                    </div>
+    
+    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
